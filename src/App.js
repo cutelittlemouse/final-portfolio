@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Works from './Works';
+import About from './About';
+import * as React from 'react';
+import { SocialIcon } from 'react-social-icons';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <About />
+      <Works />
+      <div className="Bottom-Navigation">
+        <SocialIcon url="https://www.linkedin.com/" network="linkedin" fgColor='white' />
+        <SocialIcon url="https://www.instagram.com" network="instagram" fgColor='white' />
+        <SocialIcon url="mailto:" network="email" fgColor='white' />
+      </div>
     </div>
   );
 }
